@@ -1,7 +1,13 @@
-[Centos]
+[web_servers]
 10.10.2.21
-
-[Ubuntu]
 10.10.2.22
+
+[db_servers]
 10.10.2.24
 10.10.2.25
+
+[file_servers]
+10.10.2.25
+
+[workstations]
+10.10.2.28
