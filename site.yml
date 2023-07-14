@@ -4,7 +4,6 @@
   become: true
   pre_tasks:
 
-
   - name: update repository index (CentOS)
     tags: always
     yum:
@@ -26,12 +25,6 @@
     - base
 
  
-- hosts: workstations
-  become: true
-  roles:
-    - workstations
-
- 
 - hosts: web_servers
   become: true
   roles:
@@ -48,3 +41,9 @@
   become: true
   roles:
     - file_servers
+
+ 
+- hosts: workstations
+  become: true
+  roles:
+    - workstations
